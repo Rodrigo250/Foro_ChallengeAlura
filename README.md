@@ -86,9 +86,5 @@ Endpoint	Método	Descripción
 /topicos/{id}/respuestas	POST	Crea una respuesta en un tópico (requiere autenticación).
 
 👨‍💻 Autor
-Proyecto desarrollado como parte del programa Oracle Next Education (ONE) - Alura Latam.
-
-arduino
-Copiar
-Editar
+Rodrigo Linares
 
