@@ -73,17 +73,20 @@ mvn spring-boot:run
 La aplicación correrá por defecto en:
 👉 http://localhost:8080
 
-📝 Endpoints de la API
-Se puede probar con Postman o Insomnia.
+## 📝 Endpoints de la API
 
-Endpoint	Método	Descripción
-/login	POST	Autenticación de usuario. Retorna un token JWT.
-/topicos	GET	Lista todos los tópicos (paginación con ?page=0&size=10).
-/topicos	POST	Crea un nuevo tópico (requiere autenticación).
-/topicos/{id}	GET	Obtiene un tópico por su ID.
-/topicos/{id}	PUT	Actualiza un tópico por su ID (requiere autenticación).
-/topicos/{id}	DELETE	Elimina un tópico por su ID (requiere autenticación).
-/topicos/{id}/respuestas	POST	Crea una respuesta en un tópico (requiere autenticación).
+Se puede probar con **Postman** o **Insomnia**.
+
+| Endpoint                   | Método | Descripción |
+|----------------------------|--------|-------------|
+| `/login`                   | POST   | Autenticación de usuario. Retorna un token JWT. |
+| `/topicos`                 | GET    | Lista todos los tópicos (paginación con `?page=0&size=10`). |
+| `/topicos`                 | POST   | Crea un nuevo tópico (requiere autenticación). |
+| `/topicos/{id}`            | GET    | Obtiene un tópico por su ID. |
+| `/topicos/{id}`            | PUT    | Actualiza un tópico por su ID (requiere autenticación). |
+| `/topicos/{id}`            | DELETE | Elimina un tópico por su ID (requiere autenticación). |
+| `/topicos/{id}/respuestas` | POST   | Crea una respuesta en un tópico (requiere autenticación). |
+
 
 👨‍💻 Autor
 Rodrigo Linares
