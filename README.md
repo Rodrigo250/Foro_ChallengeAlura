@@ -53,3 +53,42 @@ La aplicación permite a los usuarios crear, leer, actualizar y eliminar tópico
 1. **Clonar el repositorio:**
    ```bash
    git clone <url-del-repositorio>
+
+Configurar la base de datos:
+
+Crear una base de datos en MySQL con el nombre forohub.
+
+Abrir el archivo src/main/resources/application.properties y configurar las credenciales:
+
+spring.datasource.url=jdbc:mysql://localhost:3306/forohub
+spring.datasource.username=tu_usuario
+spring.datasource.password=tu_contraseña
+
+Ejecutar la aplicación:
+
+Desde un IDE (IntelliJ, VS Code, etc.) o usando Maven:
+
+mvn spring-boot:run
+
+La aplicación correrá por defecto en:
+👉 http://localhost:8080
+
+📝 Endpoints de la API
+Se puede probar con Postman o Insomnia.
+
+Endpoint	Método	Descripción
+/login	POST	Autenticación de usuario. Retorna un token JWT.
+/topicos	GET	Lista todos los tópicos (paginación con ?page=0&size=10).
+/topicos	POST	Crea un nuevo tópico (requiere autenticación).
+/topicos/{id}	GET	Obtiene un tópico por su ID.
+/topicos/{id}	PUT	Actualiza un tópico por su ID (requiere autenticación).
+/topicos/{id}	DELETE	Elimina un tópico por su ID (requiere autenticación).
+/topicos/{id}/respuestas	POST	Crea una respuesta en un tópico (requiere autenticación).
+
+👨‍💻 Autor
+Proyecto desarrollado como parte del programa Oracle Next Education (ONE) - Alura Latam.
+
+arduino
+Copiar
+Editar
+
